@@ -1,0 +1,103 @@
+@charset "utf-8";
+*{
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(#c027e6, #711da1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card{
+
+    width: 540px;
+    /* height: 50px; */
+    background-color: rgba(243, 9, 192, 0.5);
+    border-radius: 16px;
+
+
+    /* Alinhamento do box */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    /* Sobreamento do box */
+    box-shadow: rgb(100, 100, 111, .2) 0px 7px 29px 0px;
+
+}
+
+.profile-img{
+
+    width: 120px;
+    border-radius: 50%;
+    border: #a11d9a 5px solid;
+
+    /* Sombra do box */
+    box-shadow: rgba(0, 0, 0, .35) 0px 5px 15px;
+
+    /* Direção na imagem no eixo Y */
+    transform: translateY(-65px);
+
+}
+
+/* formatando textos */
+.container-text{
+    margin-top: -40px;
+}
+
+h1.nome{
+
+    margin: 0;
+    text-shadow: rgba(0, 0, 0, 0.6) 0px 5px 10px;
+
+}
+
+h3.desc{
+
+    font-weight: 400;
+    text-shadow: rgba(0, 0, 0, 0.6) 0px 5px 10px;
+
+}
+
+.socials{
+    margin: 30px 0;
+}
+
+/* margem nos icones do lado direito */
+.socials a{
+    margin-right: 40px;
+}
+
+/* retira a margem do ultimo icone do lado esquerdo */
+.socials a:last-child{
+    margin-right: 0px;
+}
+
+.socials img{
+    width: 50px;
+    transition: all .3s;
+    box-shadow: rgba(0, 0, 0, .35) 0px 5px 15px;
+    border-radius: 50%;
+}
+
+/* animação para aumentar o icon quando passar o mouse */
+.socials img:hover{
+    transform: scale(110%);
+}
+
